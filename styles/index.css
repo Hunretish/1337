@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    background-color: black;
+}
+
+
+.card-container
+{
+    width: 900px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: black;
+    
+}
+
+h1
+{
+    font-size: 150px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+h1:hover
+{
+    cursor: pointer;
+    animation: neon 2s ease-in-out infinite alternate;
+    transform: rotate(180deg);
+    transition: all 2s ease-in;
+    color: black;
+
+}
+
+@keyframes neon
+{
+    from 
+    {
+      text-shadow: 0 0 10px #50ffb1, 0 0 20px #50ffb1, 0 0 30px #006638, 0 0 40px #006638, 0 0 50px #006638, 0 0 60px #006638, 0 0 70px #006638;
+    }
+    
+    to 
+    {
+      text-shadow: 0 0 20px #50ffb1, 0 0 30px #00E07B, 0 0 40px #00E07B, 0 0 50px #00E07B, 0 0 60px #00E07B, 0 0 70px #00E07B, 0 0 80px #00E07B;
+    }
+}
